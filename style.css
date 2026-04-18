@@ -34,7 +34,7 @@ h2 { font-size: 1.3rem; margin-bottom: 16px; color: #1a3a5c; }
 .stem p { margin-bottom: 8px; }
 .stem table { border-collapse: collapse; margin: 10px 0; font-size: 13px; width: auto; }
 .stem th, .stem td { border: 1px solid #dee2e6; padding: 6px 12px; text-align: left; }
-.stem th { background: #e8f2fb; font-weight: 600; }
+.stem th { background: white; font-weight: 600; }
 .stem tr:nth-child(even) td { background: #f8f9fa; }
 .stem ul { margin: 8px 0 8px 20px; }
 .stem li { margin-bottom: 4px; }
@@ -56,7 +56,7 @@ details summary:hover { color: #1a3a5c; }
 .expl-body p { margin-bottom: 10px; color: #333; }
 .expl-body table { border-collapse: collapse; margin: 10px 0; font-size: 13px; }
 .expl-body th, .expl-body td { border: 1px solid #dee2e6; padding: 6px 12px; }
-.expl-body th { background: #e8f2fb; }
+.expl-body th { background: white; }
 .edu-obj { margin-top: 14px; padding: 12px 16px; background: #eaf4f0;
   border-radius: 6px; border-left: 3px solid #1e7e34; font-size: 14px; line-height: 1.7; }
 .edu-obj p { margin-bottom: 6px; }
@@ -83,3 +83,24 @@ footer { text-align: center; padding: 20px; color: #6c757d; font-size: 13px; }
   margin-bottom: 2px;
 }
 .img-flag { font-size: 1.5rem; line-height: 1; margin-left: 8px; }
+
+/* B4Q50 hypothesis table */
+.b4q50-table { border-collapse: collapse; margin: 12px 0; font-size: 14px; width: 100%; }
+.b4q50-table th, .b4q50-table td { border: 1px solid #000; padding: 8px 14px; text-align: center; background: white; color: black; }
+.b4q50-table .span-header { font-weight: 700; font-size: 15px; text-align: center; }
+.b4q50-table thead tr:nth-child(2) th { font-weight: 600; text-align: center; }
+.b4q50-table tbody td:first-child { text-align: left; }
+.b4q50-table .cell-label { font-size: 16px; font-weight: 700; width: 80px; }
+.sub-list { margin-left: 24px; margin-top: 2px; margin-bottom: 2px; }
+.img-flag { font-size: 1.5rem; line-height: 1; margin-left: 8px; }
+
+/* Global table: black text, white background, black borders */
+.stem table, .expl-body table, .b4q50-table {
+  border-collapse: collapse;
+}
+.stem table th, .stem table td,
+.expl-body table th, .expl-body table td {
+  border: 1px solid #000 !important;
+  background: white !important;
+  color: black !important;
+}
