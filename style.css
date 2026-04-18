@@ -74,3 +74,5 @@ footer { text-align: center; padding: 20px; color: #6c757d; font-size: 13px; }
   .q-body { padding: 14px; }
   main { padding: 14px 10px 40px; }
 }
+
+.img-flag { font-size: 1.5rem; line-height: 1; }
