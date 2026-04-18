@@ -104,3 +104,12 @@ footer { text-align: center; padding: 20px; color: #6c757d; font-size: 13px; }
   background: white !important;
   color: black !important;
 }
+
+/* Nested sub-lists: circle bullets, indented */
+.stem ul.sub-list,
+.expl-body ul.sub-list {
+  list-style-type: circle;
+  margin-left: 28px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
