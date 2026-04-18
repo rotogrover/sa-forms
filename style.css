@@ -1,0 +1,76 @@
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px; line-height: 1.65; color: #212529; background: #f8f9fa; }
+a { color: #2d6fa5; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-header { background: #1a3a5c; color: white; padding: 12px 20px;
+  position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 6px rgba(0,0,0,.3); }
+.header-inner { max-width: 1000px; margin: 0 auto; display: flex;
+  align-items: center; gap: 24px; flex-wrap: wrap; }
+.site-header h1 { font-size: 1.1rem; }
+.site-header h1 a { color: white; }
+.site-header nav a { color: #90caf9; font-size: 14px; margin: 0 4px; }
+
+main { max-width: 1000px; margin: 0 auto; padding: 24px 16px 60px; }
+h2 { font-size: 1.3rem; margin-bottom: 16px; color: #1a3a5c; }
+.count { font-size: 0.9rem; font-weight: normal; color: #6c757d; }
+.note { font-size: 14px; color: #555; margin-bottom: 20px; }
+
+/* Question articles */
+.question { background: white; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,.08);
+  margin-bottom: 24px; overflow: hidden; border: 1px solid #dee2e6; }
+.q-header { background: #2d6fa5; color: white; padding: 8px 16px;
+  display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; }
+.img-flag { background: rgba(255,255,255,.2); padding: 2px 8px; border-radius: 10px; font-size: 11px; }
+.q-body { padding: 18px 20px; }
+.q-image { text-align: center; margin-bottom: 16px; }
+.q-image img { max-width: 100%; max-height: 400px; border-radius: 6px;
+  border: 1px solid #dee2e6; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+.q-image figcaption { font-size: 12px; color: #6c757d; margin-top: 6px; font-style: italic; }
+
+.stem { font-size: 15px; margin-bottom: 16px; }
+.stem p { margin-bottom: 8px; }
+.stem table { border-collapse: collapse; margin: 10px 0; font-size: 13px; width: auto; }
+.stem th, .stem td { border: 1px solid #dee2e6; padding: 6px 12px; text-align: left; }
+.stem th { background: #e8f2fb; font-weight: 600; }
+.stem tr:nth-child(even) td { background: #f8f9fa; }
+.stem ul { margin: 8px 0 8px 20px; }
+.stem li { margin-bottom: 4px; }
+
+.choices { margin-bottom: 14px; }
+.choice { display: flex; gap: 10px; padding: 7px 10px; border-radius: 5px;
+  border: 1px solid #dee2e6; margin-bottom: 6px; font-size: 14px; background: #fafafa; }
+.letter { font-weight: 700; color: #2d6fa5; min-width: 20px; flex-shrink: 0; }
+
+.correct-answer { display: inline-block; padding: 5px 14px; border-radius: 20px;
+  background: #d4edda; color: #1e7e34; font-size: 13px; font-weight: 600; margin-bottom: 14px; }
+.correct-answer.missing { background: #fff3cd; color: #856404; }
+
+details.explanation { border-top: 1px solid #dee2e6; margin-top: 4px; }
+details summary { padding: 10px 4px; font-weight: 600; font-size: 14px; color: #2d6fa5;
+  cursor: pointer; user-select: none; }
+details summary:hover { color: #1a3a5c; }
+.expl-body { padding: 12px 4px 4px; font-size: 14px; line-height: 1.7; }
+.expl-body p { margin-bottom: 10px; color: #333; }
+.expl-body table { border-collapse: collapse; margin: 10px 0; font-size: 13px; }
+.expl-body th, .expl-body td { border: 1px solid #dee2e6; padding: 6px 12px; }
+.expl-body th { background: #e8f2fb; }
+.edu-obj { margin-top: 14px; padding: 12px 16px; background: #eaf4f0;
+  border-radius: 6px; border-left: 3px solid #1e7e34; font-size: 14px; line-height: 1.7; }
+.edu-obj p { margin-bottom: 6px; }
+
+/* Index table */
+.index-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.index-table th { background: #1a3a5c; color: white; padding: 8px 12px; text-align: left; }
+.index-table td { padding: 7px 12px; border-bottom: 1px solid #dee2e6; vertical-align: top; }
+.index-table tr:hover td { background: #f0f6fc; }
+.index-table td:first-child { font-weight: 700; white-space: nowrap; }
+.index-table td:last-child { font-weight: 700; color: #1e7e34; white-space: nowrap; }
+
+footer { text-align: center; padding: 20px; color: #6c757d; font-size: 13px; }
+@media(max-width:600px){
+  .q-body { padding: 14px; }
+  main { padding: 14px 10px 40px; }
+}
